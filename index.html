@@ -3,182 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexoMC — Profesjonalny serwer Minecraft</title>
-  <meta name="description" content="NexoMC — survival, ekonomia, eventy, klucze, rangi VIP i aktywna administracja. Dołącz już dziś: nexomc.icsv.pl" />
+  <title>NexoMC — Serwer Minecraft PvP</title>
+  <meta name="description" content="NexoMC — czerwono-czarny serwer Minecraft z PvP, ekonomią, eventami, itemshopem i aktywną administracją." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="noise"></div>
-  <nav class="navbar" id="navbar">
-    <a class="brand" href="#home">
-      <span class="brand-mark">N</span>
-      <span>NexoMC</span>
-    </a>
-    <button class="menu-btn" id="menuBtn" aria-label="Otwórz menu">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#home">Start</a>
-      <a href="#about">Serwer</a>
-      <a href="#shop">ItemShop</a>
-      <a href="#keys">Klucze</a>
-      <a href="#team">Administracja</a>
-      <a href="#contact">Kontakt</a>
-    </div>
-  </nav>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
 
-  <header class="hero" id="home">
-    <div class="hero-glow hero-glow-one"></div>
-    <div class="hero-glow hero-glow-two"></div>
-    <div class="hero-content reveal">
-      <div class="eyebrow">Minecraft Survival • Ekonomia • Eventy</div>
-      <h1>Dołącz do świata <span>NexoMC</span></h1>
-      <p class="hero-text">Nowoczesny serwer Minecraft z aktywną administracją, dopracowaną ekonomią, nagrodami za aktywność, eventami i sklepem z rangami oraz kluczami.</p>
-      <div class="hero-actions">
-        <button class="btn primary" id="copyIpBtn">Skopiuj IP</button>
-        <a class="btn secondary" href="https://discord.gg/WbhVMepzP" target="_blank" rel="noopener">Discord</a>
-      </div>
-      <div class="ip-card">
-        <div>
-          <small>Adres serwera</small>
-          <strong id="serverIp">nexomc.icsv.pl</strong>
-        </div>
-        <div>
-          <small>Status</small>
-          <strong id="serverStatus">Sprawdzanie...</strong>
-        </div>
-        <div>
-          <small>Gracze online</small>
-          <strong id="playersOnline">--</strong>
-        </div>
-      </div>
-    </div>
-    <div class="hero-panel reveal">
-      <div class="server-card">
-        <div class="server-top">
-          <span class="live-dot"></span>
-          <span>NexoMC Network</span>
-        </div>
-        <div class="cube-scene" aria-hidden="true">
-          <div class="cube grass"></div>
-          <div class="cube diamond"></div>
-          <div class="cube gold"></div>
-        </div>
-        <div class="stats-grid">
-          <div><b>1.20+</b><span>Wersja</span></div>
-          <div><b>24/7</b><span>Dostępność</span></div>
-          <div><b>FairPlay</b><span>Zasady</span></div>
-          <div><b>Eventy</b><span>Nagrody</span></div>
-        </div>
-      </div>
-    </div>
+  <header class="nav">
+    <a class="brand" href="#home"><span class="brand-mark">N</span><span>NexoMC</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#tryby">Tryby</a>
+      <a href="#itemshop">ItemShop</a>
+      <a href="#klucze">Klucze</a>
+      <a href="#administracja">Administracja</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
   </header>
 
-  <main>
-    <section class="section reveal" id="about">
-      <div class="section-heading">
-        <span>Dlaczego NexoMC?</span>
-        <h2>Serwer stworzony pod dobrą zabawę</h2>
-        <p>Buduj bazę, handluj z graczami, zdobywaj nagrody, walcz w eventach i rozwijaj swoją pozycję na serwerze.</p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card"><div class="icon">🏡</div><h3>Survival</h3><p>Klasyczna rozgrywka z ekonomią, sklepem, działkami i systemem nagród.</p></article>
-        <article class="feature-card"><div class="icon">💰</div><h3>Ekonomia</h3><p>Zarabiaj, handluj, sprzedawaj przedmioty i rozwijaj swój majątek.</p></article>
-        <article class="feature-card"><div class="icon">⚔️</div><h3>Rywalizacja</h3><p>Rankingi, PvP, wyzwania i specjalne eventy dla aktywnych graczy.</p></article>
-        <article class="feature-card"><div class="icon">🛡️</div><h3>Administracja</h3><p>Pomocna ekipa pilnuje porządku i szybko reaguje na zgłoszenia.</p></article>
-      </div>
-    </section>
-
-    <section class="banner reveal">
-      <div>
-        <span>Start dla nowych</span>
-        <h2>Odbierz startowy zestaw i rozpocznij grę</h2>
-        <p>Na start otrzymujesz podstawowe przedmioty, które pomogą Ci szybciej zbudować pierwszą bazę.</p>
-      </div>
-      <a class="btn primary" href="#starter">Zobacz zestaw</a>
-    </section>
-
-    <section class="section reveal" id="shop">
-      <div class="section-heading">
-        <span>ItemShop</span>
-        <h2>Rangi premium</h2>
-        <p>Przykładowe opisy rang. Ceny i komendy możesz później łatwo zmienić w kodzie.</p>
-      </div>
-      <div class="shop-grid">
-        <article class="shop-card"><div class="rank vip">VIP</div><h3>Ranga VIP</h3><p>Dla graczy, którzy chcą wygodniejszego startu i podstawowych bonusów.</p><ul><li>Dodatkowe komendy</li><li>Bonus do nagród</li><li>Kolorowy prefix</li></ul><button class="btn small">Wkrótce</button></article>
-        <article class="shop-card popular"><div class="badge">Popularne</div><div class="rank svip">SVIP</div><h3>Ranga SVIP</h3><p>Lepsze bonusy, więcej wygody i wyróżnienie na czacie.</p><ul><li>Więcej /sethome</li><li>Lepszy kit</li><li>Priorytet w pomocy</li></ul><button class="btn small">Wkrótce</button></article>
-        <article class="shop-card"><div class="rank mvip">MVIP</div><h3>Ranga MVIP</h3><p>Dla aktywnych graczy, którzy chcą rozbudowanych dodatków.</p><ul><li>Mocniejsze bonusy</li><li>Specjalny prefix</li><li>Dostęp do lepszych nagród</li></ul><button class="btn small">Wkrótce</button></article>
-        <article class="shop-card"><div class="rank gvip">GVIP</div><h3>Ranga GVIP</h3><p>Najwyższy pakiet premium z najlepszymi dodatkami.</p><ul><li>Najlepszy kit</li><li>Najwięcej komend</li><li>Ekskluzywne wyróżnienie</li></ul><button class="btn small">Wkrótce</button></article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="keys">
-      <div class="section-heading">
-        <span>Skrzynki</span>
-        <h2>Klucze i zestawy</h2>
-        <p>Dodaj sprzedaż na Discordzie lub później podłącz prawdziwy sklep.</p>
-      </div>
-      <div class="keys-grid">
-        <article class="key-card rare"><span>🔑</span><h3>Klucz Rzadki</h3><p>Podstawowe nagrody, waluta, surowce i przydatne itemy.</p></article>
-        <article class="key-card epic"><span>🔮</span><h3>Klucz Epicki</h3><p>Lepsze przedmioty, większe nagrody i szansa na unikalne bonusy.</p></article>
-        <article class="key-card legendary"><span>👑</span><h3>Klucz Legendarny</h3><p>Najmocniejsze nagrody, specjalne itemy i wysokie bonusy.</p></article>
-        <article class="key-card starter" id="starter"><span>🎁</span><h3>Startowy zestaw</h3><p>Zestaw dla nowych graczy: jedzenie, narzędzia, podstawowe surowce i gotówka.</p></article>
-      </div>
-    </section>
-
-    <section class="section split reveal">
-      <div>
-        <span class="mini-title">Zasady</span>
-        <h2>Gramy fair play</h2>
-        <p>Na NexoMC liczy się uczciwa rozgrywka. Cheaty, bugowanie, toksyczne zachowanie i celowe psucie zabawy innym graczom są zabronione.</p>
-      </div>
-      <div class="rules-list">
-        <div>✅ Szanuj innych graczy</div>
-        <div>✅ Nie używaj cheatów ani wspomagaczy</div>
-        <div>✅ Nie reklamuj innych serwerów</div>
-        <div>✅ Problemy zgłaszaj administracji</div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="team">
-      <div class="section-heading">
-        <span>Ekipa</span>
-        <h2>Administracja serwera</h2>
-        <p>Kontakt z administracją najlepiej przez Discorda.</p>
-      </div>
-      <div class="team-grid">
-        <article class="team-card"><div class="avatar">👑</div><h3>Właściciel</h3><p>Zarządzanie serwerem, rozwój i najważniejsze decyzje.</p></article>
-        <article class="team-card"><div class="avatar">🛠️</div><h3>Administrator</h3><p>Pomoc techniczna, eventy i pilnowanie porządku.</p></article>
-        <article class="team-card"><div class="avatar">🛡️</div><h3>Moderator</h3><p>Zgłoszenia graczy, czat i szybka pomoc w grze.</p></article>
-      </div>
-    </section>
-
-    <section class="section contact reveal" id="contact">
-      <div class="contact-card">
-        <span>Kontakt</span>
-        <h2>Masz pytanie lub problem?</h2>
-        <p>Dołącz na Discorda NexoMC i napisz do administracji. Tam znajdziesz ogłoszenia, zgłoszenia, konkursy i informacje o itemshopie.</p>
-        <div class="contact-actions">
-          <a class="btn primary" href="https://discord.gg/WbhVMepzP" target="_blank" rel="noopener">Wejdź na Discord</a>
-          <button class="btn secondary" id="copyDiscordBtn">Skopiuj Discord</button>
+  <main id="home">
+    <section class="hero section reveal">
+      <div class="hero-content">
+        <p class="eyebrow">⚔️ Minecraft PvP • Survival • Eventy</p>
+        <h1>NexoMC</h1>
+        <p class="hero-subtitle">Dołącz do czerwono-czarnego świata pełnego walki, ekonomii, skrzynek, eventów i aktywnej administracji. Startuj, rozwijaj bazę i pokaż, kto rządzi na serwerze.</p>
+        <div class="hero-actions">
+          <button class="btn primary" id="copyIpBtn">Skopiuj IP: nexomc.icsv.pl</button>
+          <a class="btn secondary" href="https://discord.gg/WbhVMepzP" target="_blank" rel="noopener">Dołącz na Discord</a>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card"><strong id="onlineStatus">Sprawdzanie...</strong><span>Status serwera</span></div>
+          <div class="stat-card"><strong id="playersOnline">—</strong><span>Gracze online</span></div>
+          <div class="stat-card"><strong>24/7</strong><span>Dostępność</span></div>
         </div>
       </div>
-      <div class="faq-card">
-        <h3>FAQ</h3>
-        <details open><summary>Jak wejść na serwer?</summary><p>Skopiuj IP: <b>nexomc.icsv.pl</b>, uruchom Minecraft i dodaj serwer w trybie multiplayer.</p></details>
-        <details><summary>Jak kupić rangę?</summary><p>Na start skontaktuj się z administracją przez Discorda. Później możesz dodać pełny sklep.</p></details>
-        <details><summary>Gdzie zgłosić problem?</summary><p>Najlepiej na Discordzie w odpowiednim kanale zgłoszeń.</p></details>
+      <div class="hero-panel">
+        <div class="server-card">
+          <div class="server-top"><span class="pulse"></span><span>NexoMC Network</span></div>
+          <div class="server-logo">⚔️</div>
+          <h2>Wejdź do gry</h2>
+          <p>IP serwera:</p>
+          <code>nexomc.icsv.pl</code>
+          <div class="mini-list">
+            <span>🔥 PvP</span><span>💰 Ekonomia</span><span>🎁 Nagrody</span><span>🛡️ Ochrona</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="tryby">
+      <div class="section-head">
+        <p class="eyebrow">Co znajdziesz na serwerze?</p>
+        <h2>Rozgrywka stworzona pod rywalizację</h2>
+        <p>NexoMC łączy dynamiczne PvP z uczciwą ekonomią, eventami i systemem nagród dla aktywnych graczy.</p>
+      </div>
+      <div class="features">
+        <article class="feature-card"><span>⚔️</span><h3>PvP Arena</h3><p>Walcz z innymi graczami, zdobywaj ranking i pokazuj swoje umiejętności.</p></article>
+        <article class="feature-card"><span>🏰</span><h3>Survival</h3><p>Buduj bazę, zbieraj surowce i rozwijaj się samemu albo z ekipą.</p></article>
+        <article class="feature-card"><span>💸</span><h3>Ekonomia</h3><p>Zarabiaj, handluj, ulepszaj wyposażenie i pnij się na szczyt.</p></article>
+        <article class="feature-card"><span>🎉</span><h3>Eventy</h3><p>Regularne wydarzenia, dropy, konkursy i nagrody dla społeczności.</p></article>
+      </div>
+    </section>
+
+    <section class="section reveal banner-section">
+      <div class="banner">
+        <div><p class="eyebrow">Start dla nowych graczy</p><h2>Skopiuj IP i zacznij już teraz</h2><p>Po wejściu na serwer odbierz zestaw startowy i dołącz do Discorda, żeby nie przegapić eventów.</p></div>
+        <button class="btn primary" id="copyIpBtn2">Kopiuj nexomc.icsv.pl</button>
+      </div>
+    </section>
+
+    <section class="section reveal" id="itemshop">
+      <div class="section-head">
+        <p class="eyebrow">ItemShop</p>
+        <h2>Rangi premium</h2>
+        <p>Przykładowa oferta sklepu. Ceny i komendy możesz łatwo zmienić w pliku HTML.</p>
+      </div>
+      <div class="shop-grid ranks">
+        <article class="shop-card"><div class="badge">VIP</div><h3>VIP</h3><p>Podstawowa ranga dla graczy, którzy chcą wygodniejszej rozgrywki.</p><ul><li>Kolorowy prefix</li><li>Dodatkowe /sethome</li><li>Bonus pieniędzy</li><li>Dostęp do kit VIP</li></ul><strong>9.99 zł</strong><a href="#kontakt" class="btn small">Kup / zapytaj</a></article>
+        <article class="shop-card hot"><div class="badge">SVIP</div><h3>SVIP</h3><p>Lepsze bonusy, więcej komend i mocniejszy zestaw startowy.</p><ul><li>Prefix SVIP</li><li>Więcej home</li><li>Kit SVIP</li><li>Bonus do nagród</li></ul><strong>19.99 zł</strong><a href="#kontakt" class="btn small">Kup / zapytaj</a></article>
+        <article class="shop-card"><div class="badge">MVIP</div><h3>MVIP</h3><p>Dla aktywnych graczy, którzy chcą szybciej rozwijać konto.</p><ul><li>Prefix MVIP</li><li>Ekskluzywne efekty</li><li>Kit MVIP</li><li>Lepsze nagrody</li></ul><strong>29.99 zł</strong><a href="#kontakt" class="btn small">Kup / zapytaj</a></article>
+        <article class="shop-card elite"><div class="badge">GVIP</div><h3>GVIP</h3><p>Najwyższa ranga z najlepszymi bonusami i prestiżowym wyglądem.</p><ul><li>Prefix GVIP</li><li>Najlepszy kit</li><li>Unikalne dodatki</li><li>Priorytet wsparcia</li></ul><strong>39.99 zł</strong><a href="#kontakt" class="btn small">Kup / zapytaj</a></article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="klucze">
+      <div class="section-head"><p class="eyebrow">Skrzynki i zestawy</p><h2>Klucze oraz pakiety startowe</h2></div>
+      <div class="shop-grid keys">
+        <article class="shop-card key"><h3>🟢 Klucz Rzadki</h3><p>Szansa na przydatne itemy, pieniądze i ulepszenia.</p><strong>4.99 zł</strong></article>
+        <article class="shop-card key"><h3>🟣 Klucz Epicki</h3><p>Lepsze dropy, mocniejsze przedmioty i większe bonusy.</p><strong>9.99 zł</strong></article>
+        <article class="shop-card key legendary"><h3>🟡 Klucz Legendarny</h3><p>Najrzadsze nagrody, wyjątkowe itemy i prestiżowe bonusy.</p><strong>14.99 zł</strong></article>
+        <article class="shop-card key"><h3>🎒 Zestaw Startowy</h3><p>Idealny pakiet na start: podstawowe itemy, jedzenie i kasa.</p><strong>6.99 zł</strong></article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="administracja">
+      <div class="section-head"><p class="eyebrow">Ekipa NexoMC</p><h2>Administracja</h2><p>Masz problem? Zgłoś się na Discordzie lub napisz do administracji.</p></div>
+      <div class="team-grid">
+        <article class="team-card"><div class="avatar">👑</div><h3>Właściciel</h3><p>veozq</p></article>
+        <article class="team-card"><div class="avatar">🛡️</div><h3>Administrator</h3><p>Rekrutacja otwarta</p></article>
+        <article class="team-card"><div class="avatar">🔨</div><h3>Moderator</h3><p>Pomoc graczom</p></article>
+      </div>
+    </section>
+
+    <section class="section reveal rules">
+      <div class="section-head"><p class="eyebrow">Zasady</p><h2>Regulamin w skrócie</h2></div>
+      <div class="rules-grid">
+        <p>✅ Graj fair i nie używaj cheatów.</p>
+        <p>✅ Szanuj innych graczy oraz administrację.</p>
+        <p>✅ Nie spamuj i nie reklamuj innych serwerów.</p>
+        <p>✅ Błędy zgłaszaj administracji, nie wykorzystuj ich.</p>
+      </div>
+    </section>
+
+    <section class="section reveal faq">
+      <div class="section-head"><p class="eyebrow">FAQ</p><h2>Najczęstsze pytania</h2></div>
+      <details><summary>Jak dołączyć na serwer?</summary><p>W Minecraft wpisz adres serwera: <b>nexomc.icsv.pl</b>.</p></details>
+      <details><summary>Gdzie kupić rangę lub klucze?</summary><p>Na start napisz do administracji na Discordzie. Później możesz podłączyć prawdziwy sklep.</p></details>
+      <details><summary>Jak zgłosić cheatera?</summary><p>Wejdź na Discorda i utwórz zgłoszenie z nickiem oraz dowodem.</p></details>
+    </section>
+
+    <section class="section reveal contact" id="kontakt">
+      <div class="contact-card">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Dołącz do społeczności NexoMC</h2>
+        <p>Discord to najlepsze miejsce na ogłoszenia, eventy, zgłoszenia i kontakt z administracją.</p>
+        <div class="hero-actions centered">
+          <a class="btn primary" href="https://discord.gg/WbhVMepzP" target="_blank" rel="noopener">Discord NexoMC</a>
+          <button class="btn secondary" id="copyIpBtn3">Skopiuj IP</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div><b>NexoMC</b><p>nexomc.icsv.pl</p></div>
-    <div class="footer-links"><a href="#shop">ItemShop</a><a href="#team">Administracja</a><a href="https://discord.gg/WbhVMepzP" target="_blank" rel="noopener">Discord</a></div>
+    <strong>NexoMC</strong>
+    <p>IP: nexomc.icsv.pl • Discord: discord.gg/WbhVMepzP</p>
+    <span>© 2026 NexoMC. Strona fanowska serwera Minecraft.</span>
   </footer>
 
-  <div class="toast" id="toast">Skopiowano!</div>
+  <div class="toast" id="toast">Skopiowano IP serwera!</div>
   <script src="script.js"></script>
 </body>
 </html>
